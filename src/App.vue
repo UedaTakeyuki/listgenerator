@@ -1,5 +1,9 @@
 <template>
   <v-app>
+
+    <Navbar titleStr="Link Generator" :links="links">
+    </Navbar>
+
     <v-main>
       <router-view/>
     </v-main>
@@ -7,11 +11,16 @@
 </template>
 
 <script>
+import {Navbar} from 'vuetify-nav'
 
 export default {
-  name: 'App',
-
+  components: {
+    Navbar,
+  },
   data: () => ({
+    links: [
+      { icon: 'home', text: 'Home', route: '/'},
+    ]
     //
   }),
 };
