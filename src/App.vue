@@ -20,6 +20,7 @@ export default {
   data: () => ({
     links: [
       { icon: 'home', text: 'Home', route: '/'},
+      { icon: 'home', text: 'fromChannel', route: '/fromChannel'},
     ]
     //
   }),
